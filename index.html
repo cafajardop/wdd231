@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is a homepage for my website project showcasing various HTML and CSS concepts.">
+    <meta name="author" content="Carlos Fajardo">
+    <title>Web Certificate Courses</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.svg" alt="Logo del sitio" width="48" height="48" />
+            <span class="site-name">Carlos Fajardo</span>
+        </div>
+
+        <button id="menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+            ☰
+        </button>
+
+        <nav id="primary-nav" aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-grid">
+            <section class="card" aria-labelledby="about-title">
+                <h2 id="about-title">About Me</h2>
+                <div class="card-body">
+
+                    <p>My name is Carlos Fajardo, and I am a software development student with a strong interest in web
+                        technologies.
+                        I enjoy building clean, accessible, and responsive websites using HTML, CSS, and JavaScript.
+                        This course helps me strengthen my frontend skills and prepare for more advanced development
+                        projects.</p>
+                </div>
+            </section>
+
+            <section class="card" aria-labelledby="photo-title">
+                <h2 id="photo-title">Student Photo</h2>
+
+                <div class="card-body photo-wrapper">
+                    <img src="images/profile.jpg" alt="Foto de Carlos Fajardo" width="400" height="400" loading="lazy">
+                </div>
+            </section>
+        </div>
+
+        <section class="card" aria-labelledby="courses-title">
+            <h2 id="courses-title" class="courses-title">Web Certificate Courses</h2>
+
+            <div class="filters" role="group" aria-label="Filtrar cursos">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter="cse">CSE</button>
+                <button type="button" data-filter="wdd">WDD</button>
+            </div>
+
+            <div id="courses" class="course-list" aria-live="polite"></div>
+
+            <p class="credits">
+                The total credits for course listed above is
+                <span id="total-credits">0</span>
+            </p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Otra red">
+                <img src="images/instagram.svg" alt="Otra red">
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> | Carlos Fajardo | Bogotá, Colombia 🇨🇴 🚵🏻‍♂️
+        </p>
+
+        <p>
+            Last Modification: <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
