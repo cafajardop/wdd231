@@ -1,0 +1,12 @@
+@media (min-width: 700px) {
+  .members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .members.list .card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+}

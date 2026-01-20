@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Directory | Chamber of Commerce</title>
+    <meta name="description" content="Member directory for the local Chamber of Commerce." />
+    <meta name="author" content="Carlos Fajardo" />
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Directory | Chamber of Commerce" />
+    <meta property="og:description" content="Browse member businesses and organizations in our chamber." />
+    <meta property="og:image" content="https://cafajardop.github.io/wdd231/chamber/images/og-directory.jpg" />
+    <meta property="og:url" content="https://cafajardop.github.io/wdd231/chamber/directory.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Chamber of Commerce</h1>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="directory.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#" aria-current="page">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+
+        <section class="view-controls" aria-label="Directory view controls">
+            <button id="gridBtn" type="button" aria-pressed="true">Grid</button>
+            <button id="listBtn" type="button" aria-pressed="false">List</button>
+        </section>
+
+        <section id="members" class="members grid" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Contact: Bogotá | 57 3184043192 | cafajardop@gmail.com</p>
+        <p>&copy; <span id="year"></span> Chamber | WDD 231 | Carlos Fajardo 🇨🇴 🚵🏻‍♂️</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+
+</html>

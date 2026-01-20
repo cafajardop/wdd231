@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Acme Hardware",
+      "address": "1006 West 34th Street",
+      "phone": "+1 713.263.1010",
+      "website": "https://www.aahdw.com/",
+      "image": "images/acme.jpg",
+      "membership": 3,
+      "industry": "Retail",
+      "description": "Hardware and tools for home improvement projects."
+    },
+    {
+      "name": "Blue River Cafe",
+      "address": "45 Riverside Avenue, Rexburg, ID",
+      "phone": "+1 (205) 638-2951",
+      "website": "https://childrensalabama.healthcaredish.com/LocationsAndMenus/BlueRiverCafe",
+      "image": "images/cafe.jpg",
+      "membership": 2,
+      "industry": "Food & Beverage",
+      "description": "Local coffee shop and artisan bakery."
+    },
+    {
+      "name": "Northside Fitness",
+      "address": "800 Elm Road, Rexburg, ID",
+      "phone": "+1 (575) 751-1242",
+      "website": "https://www.snapchat.com/place/northside-fitness/e4143d1e-9991-11e8-84cd-5386ac48b168",
+      "image": "images/fitness.jpg",
+      "membership": 1,
+      "industry": "Health & Wellness",
+      "description": "Gym memberships and personal training services."
+    },
+    {
+      "name": "Sunrise Dental",
+      "address": "721 North 182nd Street, Suite 301",
+      "phone": "+1 206-536-2601",
+      "website": "https://www.sunrisedentalshoreline.com/",
+      "image": "images/dental.jpg",
+      "membership": 2,
+      "industry": "Medical",
+      "description": "Family dentistry and preventive dental care."
+    },
+    {
+      "name": "Pixel Studio",
+      "address": "Calle 40 H sur # 74 D - 04",
+      "phone": "+57 3504844414",
+      "website": "https://pixelstudioarq.com/",
+      "image": "images/pixel.jpg",
+      "membership": 3,
+      "industry": "Creative Services",
+      "description": "Branding, web design, and digital media production."
+    },
+    {
+      "name": "Green Leaf Landscaping",
+      "address": "4582 Winfred Drive Marietta",
+      "phone": "+1 770-851-7454 ",
+      "website": "https://www.greenleaf-landscaping.com/",
+      "image": "images/landscaping.jpg",
+      "membership": 1,
+      "industry": "Home Services",
+      "description": "Residential landscaping and lawn maintenance."
+    },
+    {
+      "name": "Summit Accounting",
+      "address": "County and the Denver Metro Area",
+      "phone": "+1 (970) 668-4776 ",
+      "website": "https://summitaccounting.com/",
+      "image": "images/accounting.jpg",
+      "membership": 2,
+      "industry": "Finance",
+      "description": "Accounting, payroll, and tax preparation services."
+    }
+  ]
+}
