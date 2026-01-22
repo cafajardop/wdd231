@@ -32,9 +32,18 @@
 
 <body>
     <header class="site-header">
-        <h1>Chamber of Commerce</h1>
+        <div class="brand">
+            <a class="brand-mark" href="directory.html">CO</a>
+            <div class="brand-text">
+                <span class="brand-name">Chamber </span>
+                <span class="brand-tagline">of Commerce</span>
+            </div>
+        </div>
 
-        <nav class="site-nav" aria-label="Main navigation">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+            ☰
+        </button>
+        <nav class="site-nav" aria-label="Main navigation" id="siteNav">
             <a href="directory.html">Home</a>
             <a href="#">Discover</a>
             <a href="#" aria-current="page">Directory</a>

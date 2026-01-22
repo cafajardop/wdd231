@@ -7,7 +7,7 @@ body {
   font-family: system-ui, Arial, sans-serif;
 }
 
-.site-header,
+
 .site-footer,
 main {
   max-width: 1100px;
@@ -15,11 +15,86 @@ main {
   padding: 1rem;
 }
 
-.site-nav {
+.brand {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
 }
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.site-header {
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  border: none;
+  background: transparent;
+  color: #111;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.site-nav {
+  position: absolute;
+  inset-inline: 0;
+  top: 64px;
+  background: #ffffff;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem 1rem;  
+}
+
+.site-nav a {
+  padding: 0.25rem 0;
+  text-decoration: none;
+}
+
+.site-nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.site-nav.open {
+  display: flex;
+}
+
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header {
+    gap: 2rem;
+  }
+
+  .site-nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 1.25rem;
+  }
+
+}
+
 
 .members.grid {
   display: grid;

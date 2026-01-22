@@ -61,3 +61,21 @@ function setListView() {
 
 gridBtn.addEventListener("click", setGridView);
 listBtn.addEventListener("click", setListView);
+
+
+// Menu toggle functionality
+function initMenuToggle() {
+  const button = document.querySelector('#menuToggle')
+  const nav = document.querySelector("#siteNav");
+
+  if (!button || !nav) return;
+
+  button.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initMenuToggle();
+});
