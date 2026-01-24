@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Directory | Chamber of Commerce</title>
+    <meta name="description" content="Member directory for the local Chamber of Commerce." />
+    <meta name="author" content="Carlos Fajardo" />
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Open Graph -->
+    <title>Chamber | Home</title>
+    <meta name="description" content="Home page for the local Chamber of Commerce." />
+
+    <meta property="og:title" content="Chamber | Home" />
+    <meta property="og:description" content="Events, weather, and member spotlights for our Chamber." />
+    <meta property="og:image" content="https://cafajardop.github.io/wdd231/chamber/images/og-home.jpg" />
+    <meta property="og:url" content="https://cafajardop.github.io/wdd231/chamber/index.html" />
+    <meta property="og:type" content="website" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <a class="brand-mark" href="index.html">CO</a>
+            <div class="brand-text">
+                <span class="brand-name">Chamber </span>
+                <span class="brand-tagline">of Commerce</span>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+            ☰
+        </button>
+        <nav class="site-nav" aria-label="Main navigation" id="siteNav">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero" aria-label="Chamber hero">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(min-width: 900px)">
+                <img src="images/hero-small.jpg" alt="Downtown city skyline supporting local business" loading="eager">
+            </picture>
+        </section>
+
+        <div class="home-grid">
+            <section class="card" aria-labelledby="events-title">
+                <h2 id="events-title">Current Events</h2>
+                <ul class="events">
+                    <li>
+                        <h3>Business Breakfat</h3>
+                        <p><strong>Fri</strong> 8:00 AM — City Hall Annex</p>
+                    </li>
+                    <li>
+                        <h3>Small Biz Workshop</h3>
+                        <p><strong>Tue</strong> 6:30 PM — Library Room B</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card weather" aria-labelledby="weather-title">
+                <h2 id="weather-title">Weather</h2>
+
+                <div class="weather__now">
+                    <p>
+                        <span class="label">Now:</span>
+                        <span id="temp">--</span><span aria-hidden="true">°</span>
+                        <span class="sr-only">degrees</span>
+                    </p>
+                    <p id="desc">Loading...</p>
+                </div>
+
+                <div class="weather__forecast" aria-label="3 day forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast" class="forecast">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card spotlights" aria-labelledby="spotlights-title">
+                <h2 id="spotlights-title">Member Spotlights</h2>
+                <div id="spotlight-cards" class="spotlights__grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Contact: Bogotá | 57 3184043192 | cafajardop@gmail.com</p>
+        <p>&copy; <span id="year"></span> Chamber | WDD 231 | Carlos Fajardo 🇨🇴 🚵🏻‍♂️</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</body>
+
+</html>
