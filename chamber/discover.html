@@ -5,29 +5,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Directory | Chamber of Commerce</title>
-    <meta name="description" content="Member directory for the local Chamber of Commerce." />
+    <title>Chamber | Discover</title>
+    <meta name="description"
+        content="Discover local attractions, demographics, and highlights of our Chamber community." />
     <meta name="author" content="Carlos Fajardo" />
 
     <link rel="icon" href="images/favicon.ico" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Directory | Chamber of Commerce" />
-    <meta property="og:description" content="Browse member businesses and organizations in our chamber." />
-    <meta property="og:image" content="https://cafajardop.github.io/wdd231/chamber/images/og-directory.jpg" />
-    <meta property="og:url" content="https://cafajardop.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:title" content="Chamber | Discover" />
+    <meta property="og:description" content="Learn more about our community and local highlights." />
+    <meta property="og:image" content="https://cafajardop.github.io/wdd231/chamber/images/og-home.jpg" />
+    <meta property="og:url" content="https://cafajardop.github.io/wdd231/chamber/discover.html" />
     <meta property="og:type" content="website" />
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-
 </head>
 
 <body>
@@ -35,7 +33,7 @@
         <div class="brand">
             <a class="brand-mark" href="index.html">CO</a>
             <div class="brand-text">
-                <span class="brand-name">Chamber </span>
+                <span class="brand-name">Chamber</span>
                 <span class="brand-tagline">of Commerce</span>
             </div>
         </div>
@@ -43,8 +41,9 @@
         <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
             ☰
         </button>
+
         <nav class="site-nav" aria-label="Main navigation" id="siteNav">
-            <a href="index.html">Home</a>
+            <a href="index.html" aria-current="page">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
@@ -52,14 +51,24 @@
     </header>
 
     <main>
-        <h2>Member Directory</h2>
+        <h1>Discover Our Community</h1>
 
-        <section class="view-controls" aria-label="Directory view controls">
-            <button id="gridBtn" type="button" aria-pressed="true">Grid</button>
-            <button id="listBtn" type="button" aria-pressed="false">List</button>
+        <section class="card">
+            <h2>About the Area</h2>
+            <p>
+                Learn more about our local community, attractions, and opportunities.
+                This page will be expanded in future assignments.
+            </p>
         </section>
 
-        <section id="members" class="members grid" aria-live="polite"></section>
+        <section class="card">
+            <h2>Community Highlights</h2>
+            <ul>
+                <li>Strong small business network</li>
+                <li>Growing local economy</li>
+                <li>Regular networking events</li>
+            </ul>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -69,7 +78,6 @@
     </footer>
 
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 </body>
 
 </html>

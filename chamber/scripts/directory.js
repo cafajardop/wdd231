@@ -2,7 +2,7 @@
   const membersEl = document.querySelector("#members");
   const gridBtn = document.querySelector("#gridBtn");
   const listBtn = document.querySelector("#listBtn");
-  
+
   if (!membersEl || !gridBtn || !listBtn) return;
 
   async function getMembers() {
@@ -10,6 +10,13 @@
     if (!response.ok) throw new Error("Failed to fetch members");
     const data = await response.json();
     return data.members;
+  }
+
+  function membershipLabel(level) {
+    if (level === 3) return "Gold";
+    if (level === 2) return "Silver";
+    if (level === 1) return "Member";
+    return "Member";
   }
 
   function renderMembers(members) {
@@ -29,7 +36,7 @@
             Website
           </a>
         </p>
-        <p>Membership level: ${member.membership}</p>
+        <p>Membership level: ${membershipLabel(member.membership)}</p>
       `;
 
       membersEl.appendChild(card);

@@ -78,12 +78,15 @@ const SPOTLIGHTS = {
 };
 
 function isGoldOrSilver(member) {
-  const level = (member.membership ?? member.membershipLevel ?? member.level ?? "")
-    .toString()
-    .trim()
-    .toLowerCase();
+  const level = member.membership;
+  return level === 3 || level === 2;
+}
 
-  return level.includes("gold") || level.includes("silver");
+function membershipLabel(level) {
+  if (level === 3) return "Gold";
+  if (level === 2) return "Silver";
+  if (level === 1) return "Member";
+  return "Member";
 }
 
 function spotlightCard(member) {
@@ -91,7 +94,7 @@ function spotlightCard(member) {
   const phone = member.phone ?? "";
   const address = member.address ?? "";
   const website = member.website ?? "#";
-  const level = member.membership ?? member.membershipLevel ?? member.level ?? "";
+  const level = member.membership;
   const logo = member.image ?? member.logo ?? "";
 
   return `
@@ -100,11 +103,12 @@ function spotlightCard(member) {
       ${logo ? `<img src="${logo}" alt="Logo of ${name}" loading="lazy">` : ""}
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Address:</strong> ${address}</p>
-      <p><strong>Level:</strong> ${level}</p>
+      <p><strong>Level:</strong> ${membershipLabel(level)}</p>
       <p><a href="${website}" target="_blank" rel="noopener">Website</a></p>
     </article>
   `;
 }
+
 
 async function loadSpotlights() {
   if (!spotlightContainer) return;
