@@ -320,6 +320,9 @@ main,
   padding: 1rem;
   border-radius: 10px;
   background-color: #fafafa;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 500ms ease-out forwards;
 }
 
 .membership-card h3 {

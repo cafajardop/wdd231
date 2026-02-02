@@ -23,12 +23,6 @@
   }
 }
 
-.membership-card {
-  opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 500ms ease-out forwards;
-}
-
 .membership-card:nth-of-type(1) {
   animation-delay: 0ms;
 }
