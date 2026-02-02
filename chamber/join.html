@@ -49,18 +49,141 @@
   <main>
     <h1>Join the Chamber</h1>
 
-    <section class="card">
-      <h2>Membership Application</h2>
-      <p>This page will include a full application form in a future assignment.</p>
+    <div class="join-layout">
+      <form class="join-form" method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Membership Application</legend>
 
+          <label>
+            First Name
+            <input type="text" id="fname" name="fname" required title="Enter your first name"
+              autocomplete="given-name" />
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" id="lname" name="lname" required title="Enter your last name"
+              autocomplete="family-name" />
+          </label>
+
+          <label>
+            Organizational Title
+            <input type="text" id="orgtitle" name="orgtitle"
+              title="At least 7 characters. Letters, hyphens, and spaces only." autocomplete="organization-title"
+              pattern="[A-Za-z -]{7,}" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" name="email" required title="Enter a valid email address"
+              autocomplete="email" placeholder="name@example.com" />
+          </label>
+
+          <label>
+            Mobile Phone
+            <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number"
+              autocomplete="tel" />
+          </label>
+
+          <label>
+            Business/Organization Name
+            <input type="text" id="org" name="org" required title="Enter your business or organization name"
+              autocomplete="organization" />
+          </label>
+
+          <label>
+            Membership Level
+            <select id="level" name="level" required title="Select a membership level">
+              <option value="" selected disabled>Choose one…</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business/Organization Description
+            <textarea id="desc" name="desc" title="Describe your organization" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp" />
+
+          <button type="submit">Apply for Membership</button>
+        </fieldset>
+      </form>
+
+      <aside class="membership-cards" aria-label="Membership level information">
+        <h2>Membership Levels</h2>
+
+        <article class="membership-card">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations. No fee.</p>
+          <a href="#npModal" class="membership-card__link" data-modal="npModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Bronze Membership</h3>
+          <p>Starter benefits for small businesses.</p>
+          <a href="#bronzeModal" class="membership-card__link" data-modal="bronzeModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Silver Membership</h3>
+          <p>More visibility and training opportunities.</p>
+          <a href="#silverModal" class="membership-card__link" data-modal="silverModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Gold Membership</h3>
+          <p>Top visibility, spotlight features, and premium perks.</p>
+          <a href="#goldModal" class="membership-card__link" data-modal="goldModal">Learn more</a>
+        </article>
+      </aside>
+    </div>
+
+    <!-- MODALS -->
+    <dialog id="npModal" aria-labelledby="npTitle">
+      <h3 id="npTitle">NP Membership Benefits</h3>
       <ul>
-        <li><strong>Silver:</strong> Great for growing businesses</li>
-        <li><strong>Gold:</strong> Best visibility and spotlight eligibility</li>
+        <li>No fee for eligible non-profits</li>
+        <li>Directory listing</li>
+        <li>Community events access</li>
       </ul>
+      <button type="button" data-close>Close</button>
+    </dialog>
 
-      <a class="btn btn-primary" href="#">Apply (Coming Soon)</a>
-    </section>
+    <dialog id="bronzeModal" aria-labelledby="bronzeTitle">
+      <h3 id="bronzeTitle">Bronze Membership Benefits</h3>
+      <ul>
+        <li>Directory listing + bronze badge</li>
+        <li>Event discounts</li>
+        <li>Basic training access</li>
+      </ul>
+      <button type="button" data-close>Close</button>
+    </dialog>
+
+    <dialog id="silverModal" aria-labelledby="silverTitle">
+      <h3 id="silverTitle">Silver Membership Benefits</h3>
+      <ul>
+        <li>Higher directory visibility</li>
+        <li>More training opportunities</li>
+        <li>Marketing perks</li>
+      </ul>
+      <button type="button" data-close>Close</button>
+    </dialog>
+
+    <dialog id="goldModal" aria-labelledby="goldTitle">
+      <h3 id="goldTitle">Gold Membership Benefits</h3>
+      <ul>
+        <li>Homepage spotlight eligibility</li>
+        <li>Premium event access</li>
+        <li>Advertising / promotional boosts</li>
+      </ul>
+      <button type="button" data-close>Close</button>
+    </dialog>
   </main>
+
 
   <footer class="site-footer">
     <p>Contact: Bogotá | 57 3184043192 | cafajardop@gmail.com</p>
@@ -68,7 +191,9 @@
     <p>Last modified: <span id="lastModified"></span></p>
   </footer>
 
+  <script src="scripts/join.js" defer></script>
   <script src="scripts/common.js" defer></script>
+
 </body>
 
 </html>

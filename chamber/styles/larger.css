@@ -10,3 +10,68 @@
     align-items: center;
   }
 }
+
+.join-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.membership-card {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 500ms ease-out forwards;
+}
+
+.membership-card:nth-of-type(1) {
+  animation-delay: 0ms;
+}
+
+.membership-card:nth-of-type(2) {
+  animation-delay: 80ms;
+}
+
+.membership-card:nth-of-type(3) {
+  animation-delay: 160ms;
+}
+
+.membership-card:nth-of-type(4) {
+  animation-delay: 240ms;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.application-summary {
+  max-width: 600px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.application-summary dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 0.75rem;
+  column-gap: 1rem;
+  margin: 0;
+}
+
+.application-summary dt {
+  font-weight: 600;
+}
+
+.application-summary dd {
+  margin: 0;
+}

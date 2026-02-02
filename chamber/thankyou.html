@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Thank you for joining the Chamber of Commerce.">
+  <meta name="author" content="Carlos Fajardo">
+
+  <title>Thank You | Chamber of Commerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="brand-mark" href="index.html">CO</a>
+      <div class="brand-text">
+        <span class="brand-name">Chamber</span>
+        <span class="brand-tagline">of Commerce</span>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Applying!</h1>
+
+    <p>Your membership application has been successfully submitted.</p>
+
+    <section class="application-summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Application Details</h2>
+
+      <dl>
+        <dt>First Name</dt>
+        <dd id="out-fname"></dd>
+
+        <dt>Last Name</dt>
+        <dd id="out-lname"></dd>
+
+        <dt>Email</dt>
+        <dd><a id="out-email" href=""></a></dd>
+
+        <dt>Mobile Phone</dt>
+        <dd id="out-phone"></dd>
+
+        <dt>Business / Organization</dt>
+        <dd id="out-org"></dd>
+
+        <dt>Submitted On</dt>
+        <dd id="out-timestamp"></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: Bogotá | 57 3184043192 | cafajardop@gmail.com</p>
+    <p>&copy; <span id="year"></span> Chamber | WDD 231 | Carlos Fajardo 🇨🇴 🚵🏻‍♂️</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/thankyou.js" defer></script>
+  <script src="scripts/common.js" defer></script>
+</body>
+
+</html>
