@@ -1,0 +1,152 @@
+[
+  {
+    "id": "h01",
+    "name": "10-Min Stretch Reset",
+    "category": "Mobility",
+    "durationMin": 10,
+    "difficulty": "Beginner",
+    "benefit": "Flexibility + posture",
+    "equipment": "None",
+    "steps": ["Neck rolls (30s)", "Shoulder circles (60s)", "Hip opener (2m)", "Hamstring stretch (2m)", "Cat-cow (2m)", "Deep breathing (2.5m)"]
+  },
+  {
+    "id": "h02",
+    "name": "Walk + Hydrate",
+    "category": "Cardio",
+    "durationMin": 15,
+    "difficulty": "Any",
+    "benefit": "Energy + mood",
+    "equipment": "Shoes + water",
+    "steps": ["Drink a full glass of water", "Walk 10–15 minutes", "Light calf stretch (60s)"]
+  },
+  {
+    "id": "h03",
+    "name": "Bodyweight Basics",
+    "category": "Strength",
+    "durationMin": 12,
+    "difficulty": "Beginner–Intermediate",
+    "benefit": "Full-body strength",
+    "equipment": "None",
+    "steps": ["Squats x 12", "Incline push-ups x 10", "Glute bridge x 12", "Plank 30s", "Repeat 2 rounds"]
+  },
+  {
+    "id": "h04",
+    "name": "Desk Break Micro-Move",
+    "category": "Recovery",
+    "durationMin": 5,
+    "difficulty": "Any",
+    "benefit": "Less stiffness",
+    "equipment": "None",
+    "steps": ["Stand up", "20 ankle pumps", "10 air squats", "Shoulder stretch 30s/side"]
+  },
+  {
+    "id": "h05",
+    "name": "Core Quick Set",
+    "category": "Strength",
+    "durationMin": 8,
+    "difficulty": "Beginner",
+    "benefit": "Core stability",
+    "equipment": "None",
+    "steps": ["Dead bug x 8/side", "Side plank 20s/side", "Bird-dog x 8/side", "Repeat 2 rounds"]
+  },
+  {
+    "id": "h06",
+    "name": "Post-Meal Walk",
+    "category": "Cardio",
+    "durationMin": 10,
+    "difficulty": "Any",
+    "benefit": "Digestion + steady energy",
+    "equipment": "Shoes",
+    "steps": ["Walk 10 minutes at easy pace", "Breathe nasal-only if possible"]
+  },
+  {
+    "id": "h07",
+    "name": "Hydration Anchor",
+    "category": "Nutrition",
+    "durationMin": 1,
+    "difficulty": "Any",
+    "benefit": "Better hydration consistency",
+    "equipment": "Water bottle",
+    "steps": ["Fill bottle", "Drink 6–8 sips every hour", "Refill at lunch"]
+  },
+  {
+    "id": "h08",
+    "name": "Sleep Wind-Down",
+    "category": "Recovery",
+    "durationMin": 15,
+    "difficulty": "Any",
+    "benefit": "Better sleep quality",
+    "equipment": "None",
+    "steps": ["Dim lights", "Phone away", "Light stretch 5m", "Read 10m"]
+  },
+  {
+    "id": "h09",
+    "name": "Stairs Challenge",
+    "category": "Cardio",
+    "durationMin": 6,
+    "difficulty": "Intermediate",
+    "benefit": "Leg strength + cardio",
+    "equipment": "Stairs",
+    "steps": ["Walk up 2 flights", "Walk down slow", "Repeat 3 times"]
+  },
+  {
+    "id": "h10",
+    "name": "Greens Add-On",
+    "category": "Nutrition",
+    "durationMin": 2,
+    "difficulty": "Any",
+    "benefit": "More micronutrients",
+    "equipment": "Food",
+    "steps": ["Add a handful of greens", "Add protein", "Drink water"]
+  },
+  {
+    "id": "h11",
+    "name": "Breathing Reset",
+    "category": "Mindset",
+    "durationMin": 3,
+    "difficulty": "Any",
+    "benefit": "Lower stress",
+    "equipment": "None",
+    "steps": ["Inhale 4s", "Hold 2s", "Exhale 6s", "Repeat 8 cycles"]
+  },
+  {
+    "id": "h12",
+    "name": "Morning Mobility",
+    "category": "Mobility",
+    "durationMin": 7,
+    "difficulty": "Beginner",
+    "benefit": "Joint readiness",
+    "equipment": "None",
+    "steps": ["Wrist circles 30s", "Hip circles 60s", "Thoracic twist 60s", "Forward fold 60s", "Cat-cow 2m"]
+  },
+  {
+    "id": "h13",
+    "name": "Protein First",
+    "category": "Nutrition",
+    "durationMin": 1,
+    "difficulty": "Any",
+    "benefit": "Less cravings",
+    "equipment": "Food",
+    "steps": ["Choose a protein source", "Eat it first", "Then carbs/fats"]
+  },
+  {
+    "id": "h14",
+    "name": "Push-up Progression",
+    "category": "Strength",
+    "durationMin": 10,
+    "difficulty": "Beginner–Intermediate",
+    "benefit": "Upper-body strength",
+    "equipment": "Wall/chair/floor",
+    "steps": ["Wall push-ups x 12", "Incline push-ups x 10", "Knee push-ups x 8", "Pick your level and do 2 rounds"]
+  },
+  {
+    "id": "h15",
+    "name": "Evening Walk Decompress",
+    "category": "Mindset",
+    "durationMin": 12,
+    "difficulty": "Any",
+    "benefit": "Better sleep + mood",
+    "equipment": "Shoes",
+    "steps": ["Walk slow", "No music for 5 minutes", "Notice breathing and posture"]
+  }
+]

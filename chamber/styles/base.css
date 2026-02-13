@@ -354,3 +354,119 @@ dialog button {
 dialog [data-close]:hover {
   opacity: 0.85;
 }
+
+.visit-message {
+  margin: 1rem 0;
+  padding: .75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .75rem;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a" "b" "c" "d" "e" "f" "g" "h";
+}
+
+.poi-card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.poi-card figure {
+  margin: .5rem 0;
+}
+
+.poi-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: .75rem;
+}
+
+.poi-card address {
+  font-style: normal;
+  opacity: .85;
+}
+
+.poi-card button {
+  margin-top: auto;
+}
+
+.discover-grid {
+  align-items: stretch;
+}
+
+.poi-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;  
+  gap: .75rem;
+}
+
+.poi-card figure {
+  margin: 0;
+}
+
+.poi-card img {
+  width: 100%;
+  max-width: none;  
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  border-radius: .75rem;
+}
+
+.poi-card h2 {
+  margin: 0;
+  line-height: 1.2;
+  min-height: 2.4em;  
+}
+
+.poi-card button {
+  margin-top: auto;
+}
+
+.poi-card button{
+  margin-top: auto;
+  padding: .65rem 1rem;
+  border-radius: .6rem;
+  border: 2px solid #1f6feb;
+  background: transparent;
+  color: #1f6feb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.poi-card button:hover{
+  background: #1f6feb;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(31,111,235,.25);
+}
+
+.poi-card button:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.poi-card button:focus-visible{
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
+
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Habit Toolkit: browse habits generated from data, save favorites, and view details in an accessible modal.">
+    <meta name="author" content="Carlos Fajardo">
+
+    
+    <meta property="og:title" content="DailyFit | Habit Toolkit">
+    <meta property="og:description"
+        content="Explore habits, save favorites with localStorage, and view habit details in a modal.">
+    <meta property="og:image" content="https://cafajardop.github.io/wdd231/finalproject/images/og-dailyfit.jpg">
+    <meta property="og:url" content="https://cafajardop.github.io/wdd231/finalproject/habit-toolkit.html">
+    <meta property="og:type" content="website">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>DailyFit | Habit Toolkit</title>
+
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="DailyFit Home">
+                <span class="brand-mark" aria-hidden="true">DF</span>
+                <span class="brand-text">
+                    <span class="brand-name">DailyFit</span>
+                    <span class="brand-tagline">Simple habits. Real progress.</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+            </button>
+
+            <nav class="site-nav" aria-label="Primary">
+                <ul id="primary-nav" class="nav-list">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="healthy-habits.html">Healthy Habits</a></li>
+                    <li><a class="nav-link active" href="habit-toolkit.html" aria-current="page">Habit Toolkit</a></li>
+                    <li><a class="nav-link" href="form-action.html">Check-in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1>Habit Toolkit</h1>
+                <p class="section-lead">
+                    This page will generate habits from data (fetch), display at least 15 items, and let users save
+                    favorites with localStorage.
+                </p>
+
+                <section class="section alt" aria-labelledby="controls">
+                    <div class="container">
+                        <h2 id="controls">Toolkit Controls</h2>
+                        <div class="card-grid">
+                            <article class="card">
+                                <h3>Search</h3>
+                                <p>Filter habits by keyword.</p>
+                                <label class="small" for="habit-search">Search habits</label>
+                                <input id="habit-search" name="habit-search" type="search"
+                                    placeholder="e.g., walk, sleep" class="tool-input">
+                            </article>
+
+                            <article class="card">
+                                <h3>View</h3>
+                                <p>Switch between all habits and favorites.</p>
+                                <div class="tool-row" role="group" aria-label="Toolkit view">
+                                    <button class="btn secondary" type="button" id="view-all">All</button>
+                                    <button class="btn secondary" type="button" id="view-favorites">Favorites</button>
+                                </div>
+                            </article>
+
+                            <article class="card">
+                                <h3>Status</h3>
+                                <p class="small" id="toolkit-status" aria-live="polite">
+                                    Loading habits… (this will be replaced by JavaScript)
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" aria-labelledby="habit-list">
+                    <div class="container">
+                        <h2 id="habit-list">Habits</h2>
+                        <p class="section-lead">
+                            Cards below will be generated dynamically. Each item should show at least 4 properties.
+                        </p>
+                        
+                        <div id="habits-grid" class="card-grid" aria-live="polite"></div>
+
+                        <div class="cta">
+                            <a class="btn primary" href="healthy-habits.html">Need ideas? Visit Healthy Habits</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <dialog id="habit-dialog" class="habit-dialog" aria-labelledby="dialog-title">
+            <div class="dialog-inner">
+                <h2 id="dialog-title">Habit Details</h2>
+                <div id="dialog-content" class="dialog-content">                    
+                </div>
+
+                <div class="tool-row">
+                    <button class="btn secondary" type="button" id="dialog-close">Close</button>
+                    <button class="btn primary" type="button" id="dialog-favorite">Toggle Favorite</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                © <span id="year"></span> DailyFit • Carlos Fajardo
+            </p>
+
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/habit-toolkit.js"></script>
+
+    
+    <script type="module">        
+        const statusEl = document.querySelector("#toolkit-status");
+        const grid = document.querySelector("#habits-grid");
+
+        if (statusEl && grid) {
+            statusEl.textContent = "Toolkit ready. Next: fetch data and render 15+ items.";
+            grid.innerHTML = `
+              <article class="card">
+                <h3>Coming next: Data-driven habits</h3>
+                <p>This grid will be filled by JavaScript using fetch + template literals.</p>
+                <ul class="meta">
+                  <li><strong>Items:</strong> 15+</li>
+                  <li><strong>Properties:</strong> 4 each</li>
+                  <li><strong>Favorites:</strong> localStorage</li>
+                  <li><strong>Details:</strong> modal</li>
+                </ul>
+              </article>
+            `;
+        }
+        
+        const dlg = document.querySelector("#habit-dialog");
+        const closeBtn = document.querySelector("#dialog-close");
+        if (dlg && closeBtn) closeBtn.addEventListener("click", () => dlg.close());
+    </script>
+</body>
+
+</html>

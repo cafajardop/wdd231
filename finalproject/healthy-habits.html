@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Healthy habits made simple: hydration, stretching, walking, and daily routines that fit your schedule.">
+    <meta name="author" content="Carlos Fajardo">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DailyFit | Healthy Habits">
+    <meta property="og:description"
+        content="Practical habit tips for busy days: move, hydrate, sleep better, and build consistency.">
+    <meta property="og:image" content="https://cafajardop.github.io/wdd231/finalproject/images/og-dailyfit.jpg">
+    <meta property="og:url" content="https://cafajardop.github.io/wdd231/finalproject/healthy-habits.html">
+    <meta property="og:type" content="website">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>DailyFit | Healthy Habits</title>
+
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="DailyFit Home">
+                <span class="brand-mark" aria-hidden="true">DF</span>
+                <span class="brand-text">
+                    <span class="brand-name">DailyFit</span>
+                    <span class="brand-tagline">Simple habits. Real progress.</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                aria-label="Open menu">
+                <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+            </button>
+
+            <nav class="site-nav" aria-label="Primary">
+                <ul id="primary-nav" class="nav-list">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link active" href="healthy-habits.html" aria-current="page">Healthy Habits</a></li>
+                    <li><a class="nav-link" href="habit-toolkit.html">Habit Toolkit</a></li>
+                    <li><a class="nav-link" href="form-action.html">Check-in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1>Healthy Habits</h1>
+                <p class="section-lead">
+                    No motivational circus. Just small habits that are easy to repeat and actually fit into real life.
+                </p>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <h2>Hydration</h2>
+                        <p>Keep water visible. If it’s out of sight, it’s basically a myth.</p>
+                        <ul class="meta">
+                            <li><strong>Goal:</strong> 6–8 cups/day</li>
+                            <li><strong>Trigger:</strong> drink before coffee</li>
+                            <li><strong>Tip:</strong> reuse a bottle</li>
+                            <li><strong>Why:</strong> energy + focus</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h2>Daily Movement</h2>
+                        <p>Walking counts. Stretching counts. “Something” beats “nothing” every time.</p>
+                        <ul class="meta">
+                            <li><strong>Goal:</strong> 15 minutes</li>
+                            <li><strong>Trigger:</strong> after lunch</li>
+                            <li><strong>Tip:</strong> stairs > elevator</li>
+                            <li><strong>Why:</strong> mood + stamina</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h2>Sleep Basics</h2>
+                        <p>Consistency matters more than perfection. Protect the last hour of your day.</p>
+                        <ul class="meta">
+                            <li><strong>Goal:</strong> same bedtime</li>
+                            <li><strong>Trigger:</strong> phone down</li>
+                            <li><strong>Tip:</strong> dim lights</li>
+                            <li><strong>Why:</strong> recovery + cravings</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <section class="section alt" aria-labelledby="mini-plan">
+                    <div class="container split">
+                        <div>
+                            <h2 id="mini-plan">A Simple Habit Plan</h2>
+                            <p class="section-lead">Pick one habit, set a tiny goal, and repeat it for a week.</p>
+                            <ul class="checklist">
+                                <li>Choose one habit (ex: 10-min walk)</li>
+                                <li>Make it tiny (ex: 5 min is allowed)</li>
+                                <li>Attach it to a trigger (after lunch)</li>
+                                <li>Track it in the Toolkit</li>
+                            </ul>
+                            <a class="btn primary" href="habit-toolkit.html">Track Habits in the Toolkit</a>
+                        </div>
+
+                        <aside class="tips" aria-label="Tip">
+                            <h3>Pro Tip</h3>
+                            <p>Lower the bar until you can’t trip over it. Then you’ll actually do it.</p>
+                            <p class="small">Consistency is the cheat code.</p>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                © <span id="year"></span> DailyFit • Carlos Fajardo
+            </p>
+
+            <ul class="footer-links">
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Project Video</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

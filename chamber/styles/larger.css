@@ -69,3 +69,23 @@
 .application-summary dd {
   margin: 0;
 }
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h h";
+    align-items: start;
+  }
+
+  .poi-card img {
+    transition: transform .2s ease, filter .2s ease;
+  }
+
+  .poi-card:hover img {
+    transform: scale(1.03);
+    filter: saturate(1.1) contrast(1.05);
+  }
+}
