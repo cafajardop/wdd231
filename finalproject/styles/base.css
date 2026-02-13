@@ -50,7 +50,9 @@ p {
   margin: 0 0 1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--poppins);
   line-height: 1.2;
   margin: 0 0 0.75rem;
@@ -100,6 +102,7 @@ h3 {
   box-shadow: var(--shadow);
   z-index: 1000;
 }
+
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
@@ -149,10 +152,12 @@ h3 {
   flex-direction: column;
   line-height: 1.1;
 }
+
 .brand-name {
   font-weight: 800;
   font-family: var(--poppins);
 }
+
 .brand-tagline {
   font-size: 0.85rem;
   color: var(--muted);
@@ -172,6 +177,7 @@ h3 {
   box-shadow: var(--shadow);
   cursor: pointer;
 }
+
 .nav-toggle:focus-visible {
   outline: 3px solid rgba(46, 125, 50, 0.35);
   outline-offset: 2px;
@@ -255,6 +261,7 @@ h3 {
   border: var(--border);
   background: var(--white);
 }
+
 .hero-media img {
   width: 100%;
   height: auto;
@@ -327,6 +334,7 @@ h3 {
   gap: 0.25rem;
   color: var(--muted);
 }
+
 .meta strong {
   color: var(--text);
   font-weight: 700;
@@ -346,6 +354,7 @@ h3 {
   display: grid;
   gap: 0.6rem;
 }
+
 .checklist li {
   background: var(--white);
   border: var(--border);
@@ -355,6 +364,7 @@ h3 {
   position: relative;
   padding-left: 2.2rem;
 }
+
 .checklist li::before {
   content: "✓";
   position: absolute;
@@ -371,6 +381,7 @@ h3 {
   padding: 1.25rem;
   box-shadow: var(--shadow);
 }
+
 .small {
   font-size: 0.9rem;
   color: var(--muted);
@@ -388,6 +399,7 @@ h3 {
   font-weight: 800;
   font-family: var(--poppins);
 }
+
 .text-link:hover {
   text-decoration: underline;
 }
@@ -399,7 +411,7 @@ h3 {
   border-radius: 14px;
   border: var(--border);
   background: var(--white);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
   font: inherit;
 }
 
@@ -411,7 +423,7 @@ h3 {
 }
 
 .habit-dialog::backdrop {
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .habit-dialog {
@@ -440,53 +452,10 @@ h3 {
   color: var(--green);
 }
 
-.tool-input {
-  width: 100%;
-  margin-top: 0.5rem;
-  padding: 0.75rem 0.9rem;
-  border-radius: 14px;
-  border: var(--border);
-  background: var(--white);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
-  font: inherit;
-}
-
-.tool-row {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 0.75rem;
-}
-
-.habit-dialog::backdrop {
-  background: rgba(0,0,0,0.35);
-}
-
-.habit-dialog {
-  border: none;
-  border-radius: calc(var(--radius) + 6px);
-  padding: 0;
-  width: min(720px, calc(100% - 2rem));
-  box-shadow: var(--shadow);
-}
-
-.dialog-inner {
-  background: var(--white);
-  border: var(--border);
-  border-radius: calc(var(--radius) + 6px);
-  padding: 1.25rem;
-}
-
-.dialog-content {
-  color: var(--muted);
-  margin: 0.75rem 0 1rem;
-}
-
 .dialog-content ol {
   margin: 0.75rem 0 0;
   padding-left: 1.2rem;
 }
-
 
 /* Footer */
 .site-footer {
@@ -514,6 +483,7 @@ h3 {
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+
 .footer-links a {
   background: var(--white);
   border: var(--border);
@@ -521,6 +491,7 @@ h3 {
   padding: 0.5rem 0.85rem;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
 }
+
 .footer-links a:hover {
   background: rgba(46, 125, 50, 0.08);
 }
